@@ -1,0 +1,16 @@
+[project]
+name = "turbofan-rul"
+version = "1.0.0"
+description = "Remaining-useful-life prediction service for turbofan engines (NASA C-MAPSS)"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
